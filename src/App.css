@@ -141,6 +141,7 @@ a {
   padding-bottom: 5rem;
   padding-top: 100px;
   gap: 2rem;
+  
   & .ProjectsContainer {
     height: 85%;
     width: 100%;
@@ -395,6 +396,11 @@ a {
   }
 }
 @media screen and (max-width: 750px) {
+  #AboutMe {
+    & .AboutMeContainer {
+      width: 100%;
+    }
+  }
   #Project {
     height: auto;
     display: flex;
@@ -445,6 +451,32 @@ a {
   }
 }
 @media screen and (max-width: 710px) {
+  #Header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  & nav {
+    position: fixed;
+    background-color: #0c111cc0;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    & ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      list-style: none;
+      gap:70px;
+      font-family: "Roboto", sans-serif;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+  }
+}
   #skills {
     height: 100vh;
     & .SkillsTools {
@@ -506,7 +538,7 @@ a {
         animation: fadeInLeft 1s ease-in-out;
         & li {
           & a {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
           }
         }
       }

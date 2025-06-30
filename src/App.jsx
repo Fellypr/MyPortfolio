@@ -241,7 +241,7 @@ function App() {
               usuário digitar um CEP e, automaticamente, exibe as informações de
               endereço correspondentes (rua, bairro, cidade, estado, etc).
             </p>
-            <button>Visitar Site</button>
+            <button><a href="https://zip-code-finder-with-react-8yqc03fxk-fellypes-projects-b9b07338.vercel.app/" target="_blank">Visitar Site</a></button>
           </div>
         </div>
       </section>
