@@ -41,7 +41,7 @@ function App() {
               <a href="#Project">Projetos</a>
             </li>
             <li>
-              <a href="#Education">Formação</a>
+              <a href="#Education">trajetória</a>
             </li>
           </ul>
         </nav>
@@ -124,7 +124,7 @@ function App() {
       </section>
       <section id="Project">
         <h1 className="Title" data-aos="fade-up">
-          Meus Principais Projetos
+          Principais Projetos
         </h1>
         <div className="ProjectsContainer" data-aos="fade-up">
           <div className="ProjectsCard">
