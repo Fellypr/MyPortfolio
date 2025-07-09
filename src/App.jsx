@@ -49,7 +49,9 @@ function App() {
 
       <section id="AboutMe">
         <div className="InformationAboutMe">
-          <h1>Olá, sou Fallype Kenned, e sou um desenvolvedor web full stack.</h1>
+          <h1>
+            Olá, sou Fallype Kenned, e sou um desenvolvedor web full stack.
+          </h1>
           <br />
           <p>
             Sou um desenvolvedor full stack júnior com habilidades em React.js,
@@ -241,7 +243,39 @@ function App() {
               usuário digitar um CEP e, automaticamente, exibe as informações de
               endereço correspondentes (rua, bairro, cidade, estado, etc).
             </p>
-            <button><a href="https://zip-code-finder-with-react-8yqc03fxk-fellypes-projects-b9b07338.vercel.app/" target="_blank">Visitar Site</a></button>
+            <button>
+              <a
+                href="https://zip-code-finder-with-react-8yqc03fxk-fellypes-projects-b9b07338.vercel.app/"
+                target="_blank"
+              >
+                Visitar Site
+              </a>
+            </button>
+          </div>
+
+          <div className="ProjectsCard">
+            <picture>
+              <img
+                src="img/Lista de Tarefas - Brave 08_07_2025 15_49_42.png"
+                alt=""
+                width={100}
+                height={100}
+              />
+            </picture>
+            <p className="ProjectTitle">Sistema de Lista de Tarefas</p>
+            <p>
+              Aplicação web full stack com login, cadastro de usuários e painel
+              de tarefas. Após o login, o usuário pode criar, editar, concluir e
+              excluir tarefas em uma interface simples e responsiva.
+            </p>
+            <button>
+              <a
+                href="https://my-task-list-ten.vercel.app/"
+                target="_blank"
+              >
+                Visitar Site
+              </a>
+            </button>
           </div>
         </div>
       </section>
@@ -318,7 +352,7 @@ function App() {
       <footer id="Contact">
         <div className="ContactContainer">
           <h1>Entre em Contato</h1>
-          <p>
+          <p className="ContactText">
             Na minha trajetória como desenvolvedor iniciante, sempre procuro
             aprimorar minhas habilidades, colocando em prática o que aprendi em
             projetos concretos e evoluindo junto com a equipe, com

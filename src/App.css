@@ -141,7 +141,7 @@ a {
   padding-bottom: 5rem;
   padding-top: 100px;
   gap: 2rem;
-  
+
   & .ProjectsContainer {
     height: 85%;
     width: 100%;
@@ -206,7 +206,7 @@ a {
 .ProjectTitle {
   font-size: larger;
 }
-.DialogoContainer{
+.DialogoContainer {
   position: absolute;
   background-color: #02002452;
   backdrop-filter: blur(10px);
@@ -218,7 +218,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-.Dialogo{
+.Dialogo {
   position: relative;
   background-color: #111111;
   position: absolute;
@@ -229,19 +229,18 @@ a {
   z-index: 4;
   text-align: flex-start;
   border: 1px solid rgb(0, 66, 247);
-    & button{
-      background: transparent;
-      border: none;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      color: #fa1a1a;
-    }
-    & button :hover{
-      cursor: pointer;
-      scale: 1.1;
-    }
-  
+  & button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fa1a1a;
+  }
+  & button :hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
 }
 
 #Education {
@@ -313,7 +312,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 150px;
-  margin-top:5rem ;
+  margin-top: 5rem;
 
   & .ContactContainer {
     display: flex;
@@ -328,6 +327,10 @@ a {
     font-style: normal;
     font-variation-settings: "wdth" 100;
     width: 690px;
+
+    & .ContactText {
+      width: 500px;
+    }
 
     & .ContactIcons {
       display: flex;
@@ -387,7 +390,6 @@ a {
       width: 35rem;
 
       & .EduicationCard {
-        
         & p {
           font-size: 1rem;
         }
@@ -427,7 +429,7 @@ a {
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 20px;
         border-radius: 12px;
         border: 1px solid rgb(20, 59, 167);
@@ -452,31 +454,31 @@ a {
 }
 @media screen and (max-width: 710px) {
   #Header {
-  height: 60px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  & nav {
-    position: fixed;
-    background-color: #0c111cc0;
-    backdrop-filter: blur(7px);
+    height: 60px;
     width: 100%;
-    & ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60px;
-      list-style: none;
-      gap:70px;
-      font-family: "Roboto", sans-serif;
-      animation: fadeInLeft 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    & nav {
+      position: fixed;
+      background-color: #0c111cc0;
+      backdrop-filter: blur(7px);
+      width: 100%;
+      & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        list-style: none;
+        gap: 70px;
+        font-family: "Roboto", sans-serif;
+        animation: fadeInLeft 1s ease-in-out;
+      }
     }
   }
-}
   #skills {
     height: 100vh;
     & .SkillsTools {
@@ -496,6 +498,12 @@ a {
     }
   }
   #Contact {
+    & .ContactContainer{
+      & .ContactText{
+        width: 350px;
+        
+      }
+    }
     & p {
       width: 400px;
     }
@@ -544,6 +552,7 @@ a {
       }
     }
   }
+  
 }
 @media screen and (max-width: 570px) {
   #Project {
@@ -571,7 +580,7 @@ a {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 20px;
         border-radius: 12px;
         border: 1px solid rgb(20, 59, 167);
@@ -599,7 +608,7 @@ a {
   #Education {
     padding: 10px;
     height: auto;
-    & .TitleEducation{
+    & .TitleEducation {
       top: 6.5rem;
     }
     & .EduicationContainer {
@@ -629,28 +638,41 @@ a {
   }
 }
 @media screen and (max-width: 410px) {
-  #about {
-    & nav{
-      & ul{
-        & li{
-          background-color: #cc00ff;
-        }
-      }
-    }
-    & picture {
-      width: 300px;
-      height: 300px;
-      & img {
-        width: 180px;
-        height: 200px;
+  #Header {
+    & nav {
+      position: fixed;
+      background-color: #0c111cc0;
+      backdrop-filter: blur(7px);
+      width: 100%;
+      & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        list-style: none;
+        gap: 13px;
+        font-family: "Roboto", sans-serif;
+        animation: fadeInLeft 1s ease-in-out;
       }
     }
   }
-  #Contact {
-    margin-top: 9rem;
-    & p {
-      width: 300px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  & picture {
+    width: 300px;
+    height: 300px;
+    & img {
+      width: 180px;
+      height: 200px;
     }
+  }
+}
+#Contact {
+  margin-top: 9rem;
+  & p {
+    width: 300px;
   }
 }
 
