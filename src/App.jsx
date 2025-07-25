@@ -54,7 +54,13 @@ function App() {
             e contribuir com projetos do mundo real.
           </p>
         </div>
-        <picture></picture>
+        <picture>
+          <img
+            src="img/ImagemPerfil-removebg-preview.png"
+            alt="Fallype Kenned"
+            data-aos="zoom-in"
+          />
+        </picture>
       </section>
 
       <section id="skills">
