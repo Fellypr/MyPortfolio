@@ -52,7 +52,7 @@ a {
     width: 40rem;
     text-align: center;
     font-size: 1.3rem;
-    font-family: "Edu QLD Hand", cursive;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -153,8 +153,8 @@ a {
 
     & .ProjectsCard {
       background-color: #0c111c;
-      width: 350px;
-      height: 480px;
+      width: 330px;
+      height: 440px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -165,6 +165,9 @@ a {
       border-radius: 12px;
       border: 1px solid rgb(20, 59, 167);
       flex-basis: 200;
+      transition: all 0.5s ease-in-out;
+      
+      
 
       & picture {
         width: 300px;
@@ -179,32 +182,24 @@ a {
           border-radius: 5%;
         }
       }
-      & button {
-        width: 150px;
-        height: 50px;
-        border-radius: 20px;
-        border: 1px solid rgb(0, 66, 247);
-        color: white;
-        background: #020024;
-        background: linear-gradient(
-          90deg,
-          rgba(2, 0, 36, 1) 0%,
-          rgba(9, 9, 121, 1) 33%,
-          rgba(20, 60, 255, 1) 82%,
-          rgba(0, 212, 255, 1) 100%
-        );
-        transition: all 0.3s ease-in-out;
-      }
-      & button:hover {
-        cursor: pointer;
-        scale: 1.1;
-        box-shadow: 0px 0px 28px 1px rgb(38, 0, 255);
-      }
+    }
+    & .ProjectsCard:hover {
+      border: 1px solid rgb(38, 0, 255);
+      box-shadow: 0px 0px 18px 3px rgb(38, 0, 255);
+      -webkit-box-shadow: 0px 0px 18px 3px rgb(38, 0, 255);
+      -moz-box-shadow: 0px 0px 18px 3px rgb(38, 0, 255);
+      scale: 1.1;
     }
   }
 }
+
+.ProjectDescription{
+  text-align: flex-start !important;
+  font-size: 1.1rem !important;
+}
 .ProjectTitle {
   font-size: larger;
+  text-align: center;
 }
 .DialogoContainer {
   position: absolute;
@@ -423,7 +418,7 @@ a {
       & .ProjectsCard {
         background-color: #0c111c;
         width: 250px;
-        height: 400px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -570,17 +565,17 @@ a {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 0.5rem;
 
       & .ProjectsCard {
         background-color: #0c111c;
-        width: 300px;
-        height: 400px;
+        width: 180px;
+        height: 270px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 20px;
         border-radius: 12px;
         border: 1px solid rgb(20, 59, 167);

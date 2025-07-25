@@ -17,14 +17,6 @@ function App() {
     });
   }, []);
 
-  const [Dialogo, setDialogo] = useState(false);
-
-  function abrirDialogo() {
-    setDialogo(true);
-  }
-  function fecharDialogo() {
-    setDialogo(false);
-  }
 
   return (
     <body>
@@ -50,7 +42,8 @@ function App() {
       <section id="AboutMe">
         <div className="InformationAboutMe">
           <h1>
-            Olá, sou Fallype Kenned, e sou um desenvolvedor web full stack.
+            Olá, sou Fallype Kenned, e sou um desenvolvedor web full stack
+            junior.
           </h1>
           <br />
           <p>
@@ -129,54 +122,14 @@ function App() {
           Principais Projetos
         </h1>
         <div className="ProjectsContainer" data-aos="fade-up">
-          <div className="ProjectsCard">
-            <picture>
-              <img
-                src="img/Fabiana Perfumaria - Brave 16_06_2025 14_54_45.png"
-                alt=""
-                width={100}
-                height={100}
-              />
-            </picture>
-            <p className="ProjectTitle">Sistema de Gerenciamento de Loja</p>
-            <p>
-              Este projeto simula um sistema completo de vendas para loja,
-              reunindo diversas funcionalidades que refletem um sistema real de
-              ponto de venda (PDV). O objetivo foi praticar o desenvolvimento
-              full stack, com foco em organização, integração entre front-end e
-              back-end, e operações de CRUD.
-            </p>
-            <button className="More" onClick={abrirDialogo}>
-              Mais Detalhes
-            </button>
-          </div>
-          {Dialogo && (
-            <div className="DialogoContainer">
-              <div className="Dialogo">
-                <p>
-                  🛒 Atualmente, o sistema está em uso real, rodando localmente
-                  na máquina da loja, com banco de dados SQLServer também local.
-                  <br />
-                  <br />
-                  <strong>Funcionalidades principais:</strong> <br />
-                  - Cadastro, edição e listagem de clientes <br />
-                  - Registro e atualização de clientes <br />
-                  - Simulação de vendas com cálculo de desconto, troco e
-                  atualização automática do estoque <br />- Controle de produtos
-                  vendidos e histórico de movimentações <br /> <br />
-                  📎 Observação: O sistema está instalado e funcionando
-                  localmente na loja, por isso não está acessível online, mas o
-                  código-fonte está disponível no GitHub com instruções para
-                  rodar localmente.
-                </p>
-                <button onClick={fecharDialogo}>
-                  <MdCancel size={30} />
-                </button>
-              </div>
-            </div>
-          )}
+          
 
-          <div className="ProjectsCard" data-aos="fade-up">
+          <a
+            className="ProjectsCard"
+            data-aos="fade-up"
+            href="https://fellypr.github.io/FilmesFlixInReact/"
+            target="_blank"
+          >
             <picture>
               <img
                 src="img/Filmes Flix - Brave 11_06_2025 21_03_32.png"
@@ -192,20 +145,16 @@ function App() {
               detalhadas, como sinopse, ano de lançamento, gênero e avaliação do
               filme com base na API The Movie Database.
             </p>
-            <button>
-              <a
-                href="https://fellypr.github.io/FilmesFlixInReact/"
-                target="_blank"
-              >
-                Visitar Site
-              </a>
-            </button>
-          </div>
+          </a>
 
-          <div className="ProjectsCard">
+          <a
+            className="ProjectsCard"
+            href="https://weather-forecast-with-react-nine.vercel.app/"
+            target="_blank"
+          >
             <picture>
               <img
-                src="img/Vite + React - Brave 10_06_2025 15_01_58.png"
+                src="img/Previsão do Tempo - Brave 21_07_2025 23_29_06.png"
                 alt=""
                 width={100}
                 height={100}
@@ -218,16 +167,34 @@ function App() {
               clima (como a OpenWeatherMap) para exibir dados como temperatura
               atual.
             </p>
-            <button>
-              <a
-                href="https://fellypr.github.io/Weather_Forecast_With_React/"
-                target="_blank"
-              >
-                Visitar Site
-              </a>
-            </button>
-          </div>
-          <div className="ProjectsCard">
+          </a>
+
+          <a
+            className="ProjectsCard"
+            href="https://my-store-digi-market.vercel.app/"
+            target="_blank"
+          >
+            <picture>
+              <img
+                src="img/DigiMarket - Brave 21_07_2025 23_13_38.png"
+                alt=""
+                width={100}
+                height={100}
+              />
+            </picture>
+            <p className="ProjectTitle">
+              Plataforma de Vendas de Produtos Digitais
+            </p>
+            <p>
+              Este projeto é uma aplicação web voltada para a comercialização de
+              produtos digitais, como e-books, cursos, softwares, entre outros.
+              A plataforma permite ao usuário pesquisar produtos, visualizar
+              detalhes completos de cada item e acessar o link de compra ou
+              download.
+            </p>
+          </a>
+
+          <a className="ProjectsCard" href="https://zip-code-finder-with-react.vercel.app/" target="_blank">
             <picture>
               <img
                 src="img/Buscador de Cep - Brave 16_06_2025 14_20_13.png"
@@ -243,17 +210,9 @@ function App() {
               usuário digitar um CEP e, automaticamente, exibe as informações de
               endereço correspondentes (rua, bairro, cidade, estado, etc).
             </p>
-            <button>
-              <a
-                href="https://zip-code-finder-with-react-8yqc03fxk-fellypes-projects-b9b07338.vercel.app/"
-                target="_blank"
-              >
-                Visitar Site
-              </a>
-            </button>
-          </div>
+          </a>
 
-          <div className="ProjectsCard">
+          <a className="ProjectsCard" href="https://my-task-list-ten.vercel.app/" target="_blank">
             <picture>
               <img
                 src="img/Lista de Tarefas - Brave 08_07_2025 15_49_42.png"
@@ -268,15 +227,7 @@ function App() {
               de tarefas. Após o login, o usuário pode criar, editar, concluir e
               excluir tarefas em uma interface simples e responsiva.
             </p>
-            <button>
-              <a
-                href="https://my-task-list-ten.vercel.app/"
-                target="_blank"
-              >
-                Visitar Site
-              </a>
-            </button>
-          </div>
+          </a>
         </div>
       </section>
       <section id="Education">
